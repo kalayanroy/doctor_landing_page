@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Dental Clinic - Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Dental<span>Care</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contact-page">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="page-intro">We'd love to hear from you! Whether you have a question, need to schedule an appointment, or require assistance, please feel free to reach out through the form below or using our contact details.</p>
+
+            <div class="contact-layout">
+                <section id="contact-form-section">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional):</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                    <div id="form-submission-status" style="margin-top: 15px;">
+                        <!-- Messages like 'Message sent successfully!' or 'Error sending message.' will appear here -->
+                    </div>
+                </section>
+
+                <section id="contact-details-section">
+                    <h3>Our Contact Information</h3>
+                    <p><strong>DentalCare Clinic</strong></p>
+                    <p><i class="icon-map-marker"></i> 123 Smile Street, Dental City, DC 54321</p>
+                    <p><i class="icon-phone"></i> Phone: (123) 456-7890</p>
+                    <p><i class="icon-email"></i> Email: <a href="mailto:contact@dentalcare.clinic">contact@dentalcare.clinic</a></p>
+
+                    <h4>Clinic Hours:</h4>
+                    <ul>
+                        <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 2:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+
+                    <!-- Placeholder for a map -->
+                    <div id="map-placeholder">
+                        <img src="https://via.placeholder.com/400x300.png?text=Clinic+Location+Map" alt="Map showing clinic location" style="width:100%; height:auto; border-radius: 6px;">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DentalCare. All rights reserved.</p>
+            <p>Designed by AI with a modern & professional touch.</p>
+        </div>
+    </footer>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>

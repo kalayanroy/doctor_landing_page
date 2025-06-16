@@ -1,0 +1,650 @@
+/* Basic styles will be added here */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Keeping the design modern and professional as requested */
+
+/* General Container for consistent spacing and centering */
+.container {
+    width: 90%;
+    max-width: 1200px; /* Modern sites often use a max-width */
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #ffffff; /* Professional white background */
+    padding: 1em 0;
+    border-bottom: 1px solid #eeeeee; /* Subtle separator */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Slight shadow for depth */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #007bff; /* A common 'professional blue' */
+    margin: 0;
+}
+
+.logo span {
+    color: #0056b3; /* Darker shade for accent */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500; /* Slightly bolder for nav items */
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active { /* Assuming an 'active' class for current page */
+    color: #007bff;
+}
+
+/* Hero Section Styling */
+#hero {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.8em;
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button, .cta-button-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px; /* Slightly rounded corners for modern feel */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button {
+    background-color: #ffffff;
+    color: #007bff;
+    border: 2px solid #ffffff;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+    color: #0056b3;
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+/* Services Overview Styling */
+#services-overview {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#services-overview h3 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.service-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* Soft shadow for items */
+    text-align: left; /* Align text left within items */
+}
+
+.service-item h4 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 0.5em;
+}
+
+.cta-button-secondary {
+    background-color: #6c757d; /* A secondary button color */
+    color: #ffffff;
+    border: 2px solid #6c757d;
+    margin-top: 20px;
+}
+
+.cta-button-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+
+/* CTA Banner Styling */
+#cta-banner {
+    background-color: #343a40; /* Dark background for contrast */
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#cta-banner h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#cta-banner .cta-button { /* Re-using .cta-button but it will inherit banner's context if needed */
+    background-color: #007bff; /* Blue button on dark background */
+    color: #ffffff;
+    border-color: #007bff;
+}
+
+#cta-banner .cta-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333333;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Basic Responsive adjustments (more will be added later) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #hero h2 {
+        font-size: 2.2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    #services-overview .service-item { /* Example: stack service items */
+        /* No specific change needed yet as they are block by default */
+    }
+}
+
+/* Services Page Styling */
+#services-page .page-intro {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#services-page h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-detail-item {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column; /* Default for mobile */
+    align-items: center; /* Center image on mobile */
+}
+
+.service-detail-item img {
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Max size for the image */
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.service-detail-item h3 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center; /* Center title on mobile */
+}
+
+.service-detail-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: center; /* Center p on mobile */
+}
+
+.service-features {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0 0 15px 0;
+    width: 100%; /* Take full width for list items to align properly */
+}
+
+.service-features li {
+    padding: 8px 0; /* Add padding to list items */
+    border-bottom: 1px dashed #eee; /* Separator for list items */
+    color: #333;
+    position: relative; /* For pseudo-element checkmark */
+    padding-left: 25px; /* Space for checkmark */
+    text-align: left;
+}
+
+.service-features li:before {
+    content: '\2714'; /* Checkmark character */
+    color: #28a745; /* Green checkmark */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 8px; /* Adjust vertical alignment */
+}
+
+
+.service-features li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive adjustments for service items (e.g., side-by-side image and text on larger screens) */
+@media (min-width: 768px) {
+    .service-detail-item {
+        flex-direction: row; /* Image and text side-by-side */
+        text-align: left; /* Align text left on larger screens */
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    .service-detail-item img {
+        width: 250px; /* Fixed width for image on larger screens */
+        margin-right: 25px;
+        margin-bottom: 0; /* Remove bottom margin when side-by-side */
+    }
+
+    .service-detail-item h3, .service-detail-item p {
+        text-align: left; /* Align text left on larger screens */
+    }
+
+    .service-detail-item div { /* Assuming text content is wrapped in a div */
+        flex: 1; /* Allow text content to take remaining space */
+    }
+}
+
+/* About Page Styling */
+#about-page .page-intro {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#about-page h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#clinic-info, #meet-the-team {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+#meet-the-team h3 { /* Specific h3 styling for this section if needed */
+    text-align: center;
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.about-section-flex {
+    display: flex;
+    flex-direction: column; /* Mobile first */
+    gap: 20px;
+}
+
+.about-text-content h3 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.about-text-content p {
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.about-image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-members-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: single column */
+    gap: 30px;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular images for team members */
+    object-fit: cover; /* Ensure image covers the area nicely */
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.team-member h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member .doctor-specialty {
+    font-size: 1em;
+    color: #007bff;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Responsive adjustments for About Page */
+@media (min-width: 768px) {
+    .about-section-flex {
+        flex-direction: row; /* Side-by-side for clinic info and image */
+    }
+
+    .about-text-content {
+        flex: 2; /* Text takes more space */
+    }
+
+    .about-image-content {
+        flex: 1; /* Image takes less space */
+        display: flex;
+        align-items: center; /* Vertically center image if container is taller */
+    }
+
+    .about-image-content img {
+        max-width: 400px; /* Control max image size */
+    }
+
+    .team-members-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid for team members */
+    }
+}
+
+/* Contact Page Styling */
+#contact-page .page-intro {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#contact-page h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-layout {
+    display: flex;
+    flex-direction: column; /* Mobile first */
+    gap: 40px; /* Space between form and details */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+#contact-form-section, #contact-details-section {
+    padding: 20px;
+}
+
+#contact-form-section h3, #contact-details-section h3 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for width calculation */
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resize, not horizontal */
+}
+
+#contact-form-section .cta-button { /* Style for the submit button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#contact-form-section .cta-button:hover {
+    background-color: #0056b3;
+}
+
+#contact-details-section p, #contact-details-section ul {
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#contact-details-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#contact-details-section ul li {
+    padding-left: 20px; /* Space for potential icons */
+    position: relative;
+}
+
+/* Basic icon styling placeholders - using simple text for now */
+.icon-map-marker:before { content: '📍 '; }
+.icon-phone:before { content: '📞 '; }
+.icon-email:before { content: '✉️ '; }
+
+#contact-details-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact-details-section a:hover {
+    text-decoration: underline;
+}
+
+#map-placeholder {
+    margin-top: 20px;
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments for Contact Page */
+@media (min-width: 992px) { /* Use a larger breakpoint for side-by-side contact form */
+    .contact-layout {
+        flex-direction: row;
+    }
+
+    #contact-form-section {
+        flex: 1.5; /* Form takes more space */
+    }
+
+    #contact-details-section {
+        flex: 1; /* Details take less space */
+    }
+}
+
+/* Admin Page Styling */
+#admin-page .page-intro {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px; /* Reduced margin */
+    color: #555;
+}
+
+#admin-page h2 {
+    text-align: center;
+    font-size: 2.2em; /* Slightly smaller than public pages */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#admin-page section {
+    background-color: #ffffff;
+    padding: 20px 25px; /* More padding */
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Slightly more pronounced shadow */
+}
+
+#admin-page section h3 {
+    font-size: 1.6em;
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Using existing .form-group styles, but can add admin-specific ones if needed */
+#admin-page .form-group label {
+    font-weight: 600; /* Bolder labels for admin */
+}
+
+#admin-page .form-group input[type="text"],
+#admin-page .form-group input[type="email"],
+#admin-page .form-group input[type="tel"],
+#admin-page .form-group textarea {
+    background-color: #f8f9fa; /* Slightly different background for inputs */
+    border: 1px solid #ced4da;
+}
+
+#admin-page .form-group input[type="text"]:focus,
+#admin-page .form-group input[type="email"]:focus,
+#admin-page .form-group input[type="tel"]:focus,
+#admin-page .form-group textarea:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+
+.admin-save-button { /* Specific class for save buttons on admin page */
+    background-color: #28a745; /* Green for save */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.admin-save-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.save-status {
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#admin-page hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* Footer for admin might be simpler or different */
+#admin-page footer { /* Targeting admin page footer specifically if needed */
+    background-color: #444;
+    color: #bbb;
+    padding: 15px 0;
+}
