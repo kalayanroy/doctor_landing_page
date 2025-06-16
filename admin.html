@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Dental Clinic - Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Dental<span>Care</span> - Admin</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">View Site Home</a></li>
+                    <li><a href="admin.html" class="active">Content Management</a></li>
+                    <!-- Add more admin-specific links here if needed -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="admin-page">
+        <div class="container">
+            <h2>Manage Website Content</h2>
+            <p class="page-intro">Use the forms below to update content on various pages of the website. Changes will be stored locally in your browser.</p>
+
+            <section id="admin-hero-content">
+                <h3>Homepage Hero Section</h3>
+                <form id="heroContentForm">
+                    <div class="form-group">
+                        <label for="heroHeadline">Hero Headline:</label>
+                        <input type="text" id="heroHeadline" name="heroHeadline" value="Welcome to Your Brightest Smile">
+                    </div>
+                    <div class="form-group">
+                        <label for="heroSubtext">Hero Subtext:</label>
+                        <textarea id="heroSubtext" name="heroSubtext" rows="3">Expert dental care with a gentle touch. We are committed to your oral health.</textarea>
+                    </div>
+                    <button type="submit" class="cta-button admin-save-button">Save Hero Content</button>
+                </form>
+                <div class="save-status" id="heroSaveStatus"></div>
+            </section>
+
+            <section id="admin-services-overview">
+                <h3>Homepage Services Overview (Brief)</h3>
+                <form id="servicesOverviewForm">
+                    <div class="form-group">
+                        <label for="service1Title">Service 1 Title:</label>
+                        <input type="text" id="service1Title" name="service1Title" value="General Dentistry">
+                    </div>
+                    <div class="form-group">
+                        <label for="service1Desc">Service 1 Description:</label>
+                        <textarea id="service1Desc" name="service1Desc" rows="2">Routine check-ups, cleanings, and fillings.</textarea>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="service2Title">Service 2 Title:</label>
+                        <input type="text" id="service2Title" name="service2Title" value="Cosmetic Dentistry">
+                    </div>
+                    <div class="form-group">
+                        <label for="service2Desc">Service 2 Description:</label>
+                        <textarea id="service2Desc" name="service2Desc" rows="2">Teeth whitening, veneers, and smile makeovers.</textarea>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="service3Title">Service 3 Title:</label>
+                        <input type="text" id="service3Title" name="service3Title" value="Orthodontics">
+                    </div>
+                    <div class="form-group">
+                        <label for="service3Desc">Service 3 Description:</label>
+                        <textarea id="service3Desc" name="service3Desc" rows="2">Braces and aligners for a perfect smile.</textarea>
+                    </div>
+                    <button type="submit" class="cta-button admin-save-button">Save Services Overview</button>
+                </form>
+                <div class="save-status" id="servicesOverviewSaveStatus"></div>
+            </section>
+
+            <section id="admin-about-us">
+                <h3>About Us Page - Clinic Philosophy</h3>
+                <form id="aboutUsPhilosophyForm">
+                    <div class="form-group">
+                        <label for="aboutPhilosophy">Clinic Philosophy Content:</label>
+                        <textarea id="aboutPhilosophy" name="aboutPhilosophy" rows="5">At DentalCare, our philosophy is centered around patient comfort and comprehensive care. We believe in building lasting relationships with our patients based on trust and transparency. Our goal is to help you achieve and maintain optimal oral health through personalized treatment plans and patient education.</textarea>
+                    </div>
+                    <button type="submit" class="cta-button admin-save-button">Save Philosophy Content</button>
+                </form>
+                <div class="save-status" id="aboutPhilosophySaveStatus"></div>
+            </section>
+
+            <section id="admin-contact-details">
+                <h3>Contact Page - Details</h3>
+                 <form id="contactDetailsForm">
+                    <div class="form-group">
+                        <label for="contactAddress">Address:</label>
+                        <input type="text" id="contactAddress" name="contactAddress" value="123 Smile Street, Dental City, DC 54321">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">Phone:</label>
+                        <input type="tel" id="contactPhone" name="contactPhone" value="(123) 456-7890">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email:</label>
+                        <input type="email" id="contactEmail" name="contactEmail" value="contact@dentalcare.clinic">
+                    </div>
+                    <button type="submit" class="cta-button admin-save-button">Save Contact Details</button>
+                </form>
+                <div class="save-status" id="contactDetailsSaveStatus"></div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DentalCare Admin Panel. For authorized use only.</p>
+        </div>
+    </footer>
+</body>
+</html>
